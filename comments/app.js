@@ -1,17 +1,28 @@
 let ProfilePic = () => {
-    return <span>Make this component render an image</span>
+    return <img src="https://neverwintervault.org/sites/neverwintervault.org/files/project/27523/images/greiratpose.jpg" width="320px" height="180px"/>
 }
 
 let CommentBody = () => {
-    return <span>Make this component render a username in bold above the comment text</span>
+    return <h1>
+        @Greirat
+    </h1>
 }
 
 let Comment = () => {
-    return <span>Make each comment render a profile picture and the comment body</span>
+    return <div>
+        <ProfilePic />
+        <CommentBody />
+    </div>
 }
 
 let Comments = () => {
-    return <span>Make this component render a list of comments</span>
+    return <div>
+        <ProfilePic />
+        <CommentBody />
+        <Comment />
+    </div>
+
+
 }
 
 ReactDOM.render(<Comments />, document.getElementById('root'))
